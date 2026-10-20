@@ -194,7 +194,7 @@ The stop rule did not change.
 
 | | Run 1 | Run 2 |
 |---|---|---|
-| "Rejected malformed message" warning | `<paste>` | `<paste>` |
+| "Rejected malformed message" warning | `5b0c0589-7270-4207-89e1-150253db40bd` | `56136927-ffdf-43c5-b804-38e52b5b768f` |
 | last collect line | `stored 21/21 \| visible=0 in_flight=0 delayed=0` | `stored 21/21 \| visible=0 in_flight=0 delayed=0` |
 | `raw.fragments` rows / distinct `order_no` | 23 / 21 | 23 / 21 |
 | `raw.rejects` rows | 1 | 1 |
@@ -237,7 +237,7 @@ con.close()
 
 Verify it with:
 ```bash
-python kit/check_submission.py --verify <uvaid> prefect BB4C661A65    # -> VALID receipt
+python kit/check_submission.py --verify jwq8pf prefect BB4C661A65    # -> VALID receipt
 ```
 
 ---
