@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_fragments
+    description: Typed, de-duplicated fragments (one row per position).
+    columns:
+      - name: order_no
+        # unique fails if two DIFFERENT words claim the same position (exact duplicates are already gone)
+        data_tests: [not_null, unique]
+      - name: word
+        data_tests: [not_null]
