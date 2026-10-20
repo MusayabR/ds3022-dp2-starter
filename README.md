@@ -1,6 +1,6 @@
 # DS 3022 Data Project 2: The SQS Puzzle
 
-**Author:** <YOUR NAME> (`<your computing ID>`) · Fall 2026, UVA in Valencia
+**Author:** Musayab (`jwq8pf`) · Fall 2026, UVA in Valencia
 
 A Prefect pipeline that collects 21 delayed SQS messages, lands each fragment in DuckDB,
 uses dbt as a quality gate to rebuild the phrase, and submits it to the `dp2-submit` queue.
@@ -18,8 +18,8 @@ You need **Python 3.12 or 3.13** (dbt does not support 3.14 yet) and four termin
 
 macOS / Linux:
 ```bash
-git clone <MY FORK URL>
-cd <repo folder>
+git clone https://github.com/MusayabR/ds3022-dp2-starter.git
+cd cd ds3022-dp2-starter
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
