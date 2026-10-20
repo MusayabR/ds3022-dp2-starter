@@ -255,3 +255,5 @@ python kit/check_submission.py --verify jwq8pf prefect BB4C661A65    # -> VALID 
 ## AI use
 
 AI was used to write many parts of the code and produce the outputs. AI was additionally used by allowing organizations and helping stay clean. It helped format the charts and graphs so I could make the readers life easier. It helped troubleshoot any issues and fasten the process. I did this by prompting it to follow what we have learned and I told it what we have learned so it did not teach me outside resources. 
+
+The parts I did not understand myself it explained to me. It wrote majority of the ReadME to keep information correct as I had trouble understanding some parts but it explained each edit.
