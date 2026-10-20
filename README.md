@@ -199,7 +199,7 @@ The stop rule did not change.
 | `raw.fragments` rows / distinct `order_no` | 23 / 21 | 23 / 21 |
 | `raw.rejects` rows | 1 | 1 |
 | dbt | PASS=6 | PASS=6 |
-| `check_submission.py` | PASS, receipt `<RECEIPT>` | PASS, receipt `<RECEIPT>` |
+| `check_submission.py` | PASS, receipt `BB4C661A65` | PASS, receipt `BB4C661A65` |
 
 DuckDB query used for the counts (run after the flow has finished, then `con.close()`):
 ```python
@@ -233,11 +233,11 @@ con.close()
 
 **dbt output:** `Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6` (see the screenshot in section 5).
 
-**Receipt code:** `<RECEIPT CODE>`
+**Receipt code:** `BB4C661A65`
 
 Verify it with:
 ```bash
-python kit/check_submission.py --verify <uvaid> prefect <RECEIPT CODE>    # -> VALID receipt
+python kit/check_submission.py --verify <uvaid> prefect BB4C661A65    # -> VALID receipt
 ```
 
 ---
