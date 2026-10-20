@@ -247,3 +247,11 @@ python kit/check_submission.py --verify jwq8pf prefect BB4C661A65    # -> VALID 
 - This repo is a fork of the assignment repository. `kit/` is unchanged.
 - `.gitignore` keeps out `.env`, `*.duckdb`, `dbt/target/`, `dbt/logs/` and log files. I checked `git status` before every push.
 - Logging uses Prefect's `get_run_logger()` only. No log files are written or committed.
+
+# cat >> README.md <<'EOF'
+
+---
+
+## AI use
+
+AI was used to write many parts of the code and produce the outputs. AI was additionally used by allowing organizations and helping stay clean. It helped format the charts and graphs so I could make the readers life easier. It helped troubleshoot any issues and fasten the process. I did this by prompting it to follow what we have learned and I told it what we have learned so it did not teach me outside resources. 
